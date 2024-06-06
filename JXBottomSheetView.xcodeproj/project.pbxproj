@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07122FB6DA7AC82BC324E517 /* Pods_JXBottomSheetView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4436C4805290C949D1524D4F /* Pods_JXBottomSheetView.framework */; };
 		1939226A218C4F2900C7B564 /* JXBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19392269218C4F2900C7B564 /* JXBottomSheetView.swift */; };
 		19985AB221119B20000DF69B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB121119B20000DF69B /* AppDelegate.swift */; };
 		19985AB421119B21000DF69B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19985AB321119B21000DF69B /* ViewController.swift */; };
@@ -24,6 +25,9 @@
 		19985AB821119B23000DF69B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19985ABB21119B23000DF69B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19985ABD21119B23000DF69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4436C4805290C949D1524D4F /* Pods_JXBottomSheetView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXBottomSheetView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAA5AB7EC4B419B9B9BCBDF8 /* Pods-JXBottomSheetView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBottomSheetView.release.xcconfig"; path = "Target Support Files/Pods-JXBottomSheetView/Pods-JXBottomSheetView.release.xcconfig"; sourceTree = "<group>"; };
+		D39B39AB4FDCA005670EA739 /* Pods-JXBottomSheetView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXBottomSheetView.debug.xcconfig"; path = "Target Support Files/Pods-JXBottomSheetView/Pods-JXBottomSheetView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07122FB6DA7AC82BC324E517 /* Pods_JXBottomSheetView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				19985AB021119B20000DF69B /* JXBottomSheetView */,
 				19985AAF21119B20000DF69B /* Products */,
+				BE6456FF2F38005D94B3F0F3 /* Pods */,
+				1D2195F6CB9DDD068F6A269C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = JXBottomSheetView;
 			sourceTree = "<group>";
 		};
+		1D2195F6CB9DDD068F6A269C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4436C4805290C949D1524D4F /* Pods_JXBottomSheetView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE6456FF2F38005D94B3F0F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D39B39AB4FDCA005670EA739 /* Pods-JXBottomSheetView.debug.xcconfig */,
+				AAA5AB7EC4B419B9B9BCBDF8 /* Pods-JXBottomSheetView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19985AC021119B23000DF69B /* Build configuration list for PBXNativeTarget "JXBottomSheetView" */;
 			buildPhases = (
+				A16657B45C3C07BCCEEA261A /* [CP] Check Pods Manifest.lock */,
 				19985AAA21119B20000DF69B /* Sources */,
 				19985AAB21119B20000DF69B /* Frameworks */,
 				19985AAC21119B20000DF69B /* Resources */,
+				F4E2ACA8269A6CB2D231BD20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +167,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A16657B45C3C07BCCEEA261A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXBottomSheetView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E2ACA8269A6CB2D231BD20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXBottomSheetView/Pods-JXBottomSheetView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXBottomSheetView/Pods-JXBottomSheetView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXBottomSheetView/Pods-JXBottomSheetView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		19985AAA21119B20000DF69B /* Sources */ = {
@@ -290,6 +359,7 @@
 		};
 		19985AC121119B23000DF69B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39B39AB4FDCA005670EA739 /* Pods-JXBottomSheetView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -311,6 +381,7 @@
 		};
 		19985AC221119B23000DF69B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA5AB7EC4B419B9B9BCBDF8 /* Pods-JXBottomSheetView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
